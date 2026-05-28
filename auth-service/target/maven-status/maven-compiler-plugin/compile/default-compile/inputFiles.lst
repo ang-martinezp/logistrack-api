@@ -1,0 +1,9 @@
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\AuthServiceApplication.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\controller\AuthController.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\dto\LoginRequestDTO.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\dto\UsuarioRequestDTO.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\dto\UsuarioResponseDTO.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\exception\GlobalExceptionHandler.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\model\Usuario.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\repository\UsuarioRepository.java
+C:\Users\Fred\Desktop\logistrack-api\auth-service\src\main\java\com\logistrack\auth_service\service\AuthService.java

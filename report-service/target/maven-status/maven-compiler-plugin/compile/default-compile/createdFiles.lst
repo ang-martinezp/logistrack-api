@@ -1,0 +1,8 @@
+com\logistrack\report_service\controller\ReporteController.class
+com\logistrack\report_service\ReportServiceApplication.class
+com\logistrack\report_service\exception\GlobalExceptionHandler.class
+com\logistrack\report_service\model\Reporte.class
+com\logistrack\report_service\service\ReporteService.class
+com\logistrack\report_service\dto\ReporteResponseDTO.class
+com\logistrack\report_service\repository\ReporteRepository.class
+com\logistrack\report_service\dto\ReporteRequestDTO.class
