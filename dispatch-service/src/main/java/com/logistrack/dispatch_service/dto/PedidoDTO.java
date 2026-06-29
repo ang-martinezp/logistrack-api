@@ -1,0 +1,18 @@
+package com.logistrack.dispatch_service.dto;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PedidoDTO {
+    private Long id;
+    private String estado;
+    private LocalDateTime fechaPedido;
+    private LocalDateTime fechaEntregaEsperada;
+    private String observaciones;
+}
