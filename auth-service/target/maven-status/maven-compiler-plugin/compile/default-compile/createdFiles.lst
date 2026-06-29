@@ -1,0 +1,9 @@
+com\logistrack\auth_service\dto\UsuarioRequestDTO.class
+com\logistrack\auth_service\controller\AuthController.class
+com\logistrack\auth_service\repository\UsuarioRepository.class
+com\logistrack\auth_service\dto\UsuarioResponseDTO.class
+com\logistrack\auth_service\AuthServiceApplication.class
+com\logistrack\auth_service\service\AuthService.class
+com\logistrack\auth_service\model\Usuario.class
+com\logistrack\auth_service\exception\GlobalExceptionHandler.class
+com\logistrack\auth_service\dto\LoginRequestDTO.class

@@ -1,0 +1,8 @@
+com\logistrack\notification_service\NotificationServiceApplication.class
+com\logistrack\notification_service\controller\NotificacionController.class
+com\logistrack\notification_service\exception\GlobalExceptionHandler.class
+com\logistrack\notification_service\model\Notificacion.class
+com\logistrack\notification_service\dto\NotificacionResponseDTO.class
+com\logistrack\notification_service\dto\NotificacionRequestDTO.class
+com\logistrack\notification_service\service\NotificacionService.class
+com\logistrack\notification_service\repository\NotificacionRepository.class
