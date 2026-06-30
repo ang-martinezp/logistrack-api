@@ -1,0 +1,28 @@
+# Carpetas de Compilación (Maven)
+target/
+**/target/
+
+# Archivos de configuración del IDE (IntelliJ, Eclipse, VS Code)
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+.vscode/
+
+# Archivos compilados individuales
+*.class
+*.jar
+*.war
+*.ear
+*.rar
+*.zip
+
+# Archivos de sistema y logs
+/*.log
+.DS_Store
+Thumbs.db
