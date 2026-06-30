@@ -85,6 +85,6 @@ Desde el directorio del microservicio correspondiente (`auth-service`):
 
 ### Orden de Encendido de los Microservicios:
 1.  **`eureka-server`**: Compilar y ejecutar. Esperar a que la consola muestre que está listo.
-2.  **`api-gateway`**: Compilar y ejecutar.
-3.  **`auth-service`** y los demás microservicios de negocio.
-4.  Comprobar el registro de los microservicios en el panel de Eureka: [http://localhost:8761](http://localhost:8761).
+2.  **`auth-service`** y los demás microservicios de negocio.
+3.  Comprobar el registro de los microservicios en el panel de Eureka: [http://localhost:8761](http://localhost:8761).
+4.  **`api-gateway`**: Compilar y ejecutar.  
