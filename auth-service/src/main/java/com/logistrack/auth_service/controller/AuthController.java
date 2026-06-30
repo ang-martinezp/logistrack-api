@@ -1,6 +1,7 @@
 package com.logistrack.auth_service.controller;
 
 import com.logistrack.auth_service.dto.LoginRequestDTO;
+import com.logistrack.auth_service.dto.LoginResponseDTO;
 import com.logistrack.auth_service.dto.UsuarioRequestDTO;
 import com.logistrack.auth_service.dto.UsuarioResponseDTO;
 import com.logistrack.auth_service.service.AuthService;
@@ -39,7 +40,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<UsuarioResponseDTO> login(@Valid @RequestBody LoginRequestDTO dto) {
+    public ResponseEntity<LoginResponseDTO> login(@Valid @RequestBody LoginRequestDTO dto) {
         return ResponseEntity.ok(authService.login(dto));
     }
 

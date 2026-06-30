@@ -1,9 +1,11 @@
 package com.logistrack.auth_service.service;
 
 import com.logistrack.auth_service.dto.LoginRequestDTO;
+import com.logistrack.auth_service.dto.LoginResponseDTO;
 import com.logistrack.auth_service.dto.UsuarioRequestDTO;
 import com.logistrack.auth_service.dto.UsuarioResponseDTO;
 import com.logistrack.auth_service.model.Usuario;
+import com.logistrack.auth_service.security.JwtUtil;
 import com.logistrack.auth_service.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -58,7 +60,7 @@ public class AuthService {
         return mapToDTO(usuarioRepository.save(usuario));
     }
 
-    public UsuarioResponseDTO login(LoginRequestDTO dto) {
+    public LoginResponseDTO login(LoginRequestDTO dto) {
         log.info("Intento de login para usuario: {}", dto.getUsername());
         Usuario usuario = usuarioRepository.findByUsername(dto.getUsername())
                 .orElseThrow(() -> new RuntimeException("Credenciales inválidas"));
@@ -68,7 +70,8 @@ public class AuthService {
         if (!usuario.getActivo()) {
             throw new RuntimeException("Usuario inactivo");
         }
-        return mapToDTO(usuario);
+        String token = JwtUtil.generateToken(usuario.getUsername());
+        return new LoginResponseDTO(token, mapToDTO(usuario));
     }
 
     private UsuarioResponseDTO mapToDTO(Usuario usuario) {
